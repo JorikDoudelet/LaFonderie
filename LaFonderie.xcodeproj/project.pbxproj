@@ -13,9 +13,12 @@
 		9F6A373720B6A8F800E11018 /* LaFonderie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6A373520B6A8F800E11018 /* LaFonderie.xcdatamodeld */; };
 		9F6A373920B6A8FA00E11018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A373820B6A8FA00E11018 /* Assets.xcassets */; };
 		9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A373A20B6A8FA00E11018 /* LaunchScreen.storyboard */; };
+		9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */; };
+		D9A66B03FF33B03F83B4E65A /* Pods_LaFonderie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0D3D646859E8F3CB75F15FE6 /* Pods-LaFonderie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaFonderie.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie.release.xcconfig"; sourceTree = "<group>"; };
 		9F6A372B20B6A8F800E11018 /* LaFonderie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaFonderie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6A372E20B6A8F800E11018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F6A373020B6A8F800E11018 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +27,9 @@
 		9F6A373820B6A8FA00E11018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6A373B20B6A8FA00E11018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6A373D20B6A8FA00E11018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DBEC998831A1263E62EE7E53 /* Pods-LaFonderie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaFonderie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie.debug.xcconfig"; sourceTree = "<group>"; };
+		FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaFonderie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9A66B03FF33B03F83B4E65A /* Pods_LaFonderie.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		26216BA5B075191C4E1E298B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DBEC998831A1263E62EE7E53 /* Pods-LaFonderie.debug.xcconfig */,
+				0D3D646859E8F3CB75F15FE6 /* Pods-LaFonderie.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		84BE0AC8DCEFF46A1B9EDB6F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9F6A372220B6A8F800E11018 = {
 			isa = PBXGroup;
 			children = (
 				9F6A372D20B6A8F800E11018 /* LaFonderie */,
 				9F6A372C20B6A8F800E11018 /* Products */,
+				26216BA5B075191C4E1E298B /* Pods */,
+				84BE0AC8DCEFF46A1B9EDB6F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		9F6A372D20B6A8F800E11018 /* LaFonderie */ = {
 			isa = PBXGroup;
 			children = (
+				9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */,
 				9F6A372E20B6A8F800E11018 /* AppDelegate.swift */,
 				9F6A373020B6A8F800E11018 /* ViewController.swift */,
 				9F6A373220B6A8F800E11018 /* Main.storyboard */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F6A374020B6A8FA00E11018 /* Build configuration list for PBXNativeTarget "LaFonderie" */;
 			buildPhases = (
+				38E8F9E188FE922CE268E66E /* [CP] Check Pods Manifest.lock */,
 				9F6A372720B6A8F800E11018 /* Sources */,
 				9F6A372820B6A8F800E11018 /* Frameworks */,
 				9F6A372920B6A8F800E11018 /* Resources */,
+				C2F68E4F5C3FE63204E893E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +155,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */,
+				9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */,
 				9F6A373920B6A8FA00E11018 /* Assets.xcassets in Resources */,
 				9F6A373420B6A8F800E11018 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		38E8F9E188FE922CE268E66E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LaFonderie-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2F68E4F5C3FE63204E893E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F6A372720B6A8F800E11018 /* Sources */ = {
@@ -282,6 +353,7 @@
 		};
 		9F6A374120B6A8FA00E11018 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DBEC998831A1263E62EE7E53 /* Pods-LaFonderie.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +371,7 @@
 		};
 		9F6A374220B6A8FA00E11018 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D3D646859E8F3CB75F15FE6 /* Pods-LaFonderie.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
