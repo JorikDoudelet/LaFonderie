@@ -7,4 +7,5 @@ target 'LaFonderie' do
 
   # Pods for LaFonderie
     pod 'Firebase/Core'
+    pod 'Firebase/Database'
 end

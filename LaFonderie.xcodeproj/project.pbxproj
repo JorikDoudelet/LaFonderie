@@ -13,6 +13,11 @@
 		9F6A373720B6A8F800E11018 /* LaFonderie.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9F6A373520B6A8F800E11018 /* LaFonderie.xcdatamodeld */; };
 		9F6A373920B6A8FA00E11018 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A373820B6A8FA00E11018 /* Assets.xcassets */; };
 		9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F6A373A20B6A8FA00E11018 /* LaunchScreen.storyboard */; };
+		9F7A743320B6EA3300FF5693 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A743120B6EA3200FF5693 /* Montserrat-Regular.ttf */; };
+		9F7A743420B6EA3300FF5693 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A743220B6EA3300FF5693 /* Montserrat-Bold.ttf */; };
+		9FBE2AC820B6DF9800DB3650 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC720B6DF9800DB3650 /* Background.jpg */; };
+		9FBE2ACA20B6E26D00DB3650 /* BackgroundWOverlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */; };
+		9FBE2ACC20B6E39700DB3650 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2ACB20B6E39700DB3650 /* logo.png */; };
 		9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */; };
 		D9A66B03FF33B03F83B4E65A /* Pods_LaFonderie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */; };
 /* End PBXBuildFile section */
@@ -27,6 +32,11 @@
 		9F6A373820B6A8FA00E11018 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9F6A373B20B6A8FA00E11018 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9F6A373D20B6A8FA00E11018 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9F7A743120B6EA3200FF5693 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		9F7A743220B6EA3300FF5693 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		9FBE2AC720B6DF9800DB3650 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
+		9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackgroundWOverlay.jpg; sourceTree = "<group>"; };
+		9FBE2ACB20B6E39700DB3650 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
 		9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DBEC998831A1263E62EE7E53 /* Pods-LaFonderie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaFonderie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaFonderie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -82,6 +92,8 @@
 		9F6A372D20B6A8F800E11018 /* LaFonderie */ = {
 			isa = PBXGroup;
 			children = (
+				9F7A743020B6EA1200FF5693 /* fonts */,
+				9FBE2AC620B6DF2100DB3650 /* images */,
 				9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */,
 				9F6A372E20B6A8F800E11018 /* AppDelegate.swift */,
 				9F6A373020B6A8F800E11018 /* ViewController.swift */,
@@ -92,6 +104,25 @@
 				9F6A373520B6A8F800E11018 /* LaFonderie.xcdatamodeld */,
 			);
 			path = LaFonderie;
+			sourceTree = "<group>";
+		};
+		9F7A743020B6EA1200FF5693 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9F7A743220B6EA3300FF5693 /* Montserrat-Bold.ttf */,
+				9F7A743120B6EA3200FF5693 /* Montserrat-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		9FBE2AC620B6DF2100DB3650 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				9FBE2AC720B6DF9800DB3650 /* Background.jpg */,
+				9FBE2ACB20B6E39700DB3650 /* logo.png */,
+				9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */,
+			);
+			path = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,8 +185,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9F7A743320B6EA3300FF5693 /* Montserrat-Regular.ttf in Resources */,
 				9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */,
 				9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */,
+				9FBE2ACA20B6E26D00DB3650 /* BackgroundWOverlay.jpg in Resources */,
+				9FBE2AC820B6DF9800DB3650 /* Background.jpg in Resources */,
+				9F7A743420B6EA3300FF5693 /* Montserrat-Bold.ttf in Resources */,
+				9FBE2ACC20B6E39700DB3650 /* logo.png in Resources */,
 				9F6A373920B6A8FA00E11018 /* Assets.xcassets in Resources */,
 				9F6A373420B6A8F800E11018 /* Main.storyboard in Resources */,
 			);
@@ -190,11 +226,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
