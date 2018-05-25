@@ -42,6 +42,7 @@ class GebruikerViewController: UIViewController {
             ] as [String : Any]
             
             self.ref.child("Persoon").childByAutoId().setValue(persoon)
+            //
             if let destinationVC = segue.destination as? KiesCategorieViewController {
             }
         }
