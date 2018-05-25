@@ -25,14 +25,15 @@ class TestViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         
         self.ref = Database.database().reference()
-        let quizVraagRef = self.ref.child("Thema/Metaal").child("vraag1/vraag")
-        let antwoordenRef = self.ref.child("Persoon")
+        let quizVraagRef = self.ref.child("Thema/Metaal").child("vraag1").child("vraag")
+        let antwoordenRef = self.ref.child("Thema/Metaal").child("vraag1").child("Antwoorden")
         print(antwoordenRef)
         quizVraagRef.observe(.value) { (snapShot) in
             let vraag = snapShot.value as? String
             self.lblVraag.text = vraag
         }
         antwoordenRef.observe(.value) { (snapShot) in
+            
             let antwoorden = snapShot.value as? String
             print(antwoorden)
             //self.answers.append([antwoorden!])

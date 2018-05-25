@@ -38,7 +38,8 @@ class GebruikerViewController: UIViewController {
         {
             let persoon = [
                 "gebruikersnaam":  txtGebruikernaam.text,
-                "totaalPunten": 0
+                "totaalPunten": 0,
+                "Scores": ["metaalTotaal":0,"houtTotaal":0,"textielTotaal":0,"voedingTotaal":0]
             ] as [String : Any]
             
             self.ref.child("Persoon").childByAutoId().setValue(persoon)
