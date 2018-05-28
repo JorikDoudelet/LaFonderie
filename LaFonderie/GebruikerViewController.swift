@@ -15,7 +15,7 @@ class GebruikerViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
@@ -26,10 +26,10 @@ class GebruikerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
- 
+    
     
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
@@ -40,7 +40,7 @@ class GebruikerViewController: UIViewController {
                 "gebruikersnaam":  txtGebruikernaam.text,
                 "totaalPunten": 0,
                 "Scores": ["metaalTotaal":0,"houtTotaal":0,"textielTotaal":0,"voedingTotaal":0]
-            ] as [String : Any]
+                ] as [String : Any]
             
             self.ref.child("Persoon").childByAutoId().setValue(persoon)
             if let destinationVC = segue.destination as? KiesCategorieViewController {
@@ -48,5 +48,5 @@ class GebruikerViewController: UIViewController {
         }
     }
     
-
+    
 }
