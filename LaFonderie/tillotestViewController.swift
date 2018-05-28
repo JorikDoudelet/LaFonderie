@@ -9,7 +9,7 @@
 import UIKit
 import FirebaseDatabase
 
-class GebruikerViewController: UIViewController {
+class MebruikerViewController: UIViewController {
     
     var ref: DatabaseReference!
     let borderAlpha : CGFloat = 0.7

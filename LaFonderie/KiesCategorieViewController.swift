@@ -10,15 +10,43 @@ import UIKit
 
 class KiesCategorieViewController: UIViewController {
 
-    @IBOutlet weak var metaalButton: UIView!
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
+    
+//    var ref: DatabaseReference!
+    let borderAlpha : CGFloat = 0.7
+    let cornerRadius : CGFloat = 10
+
+    
+    @IBOutlet weak var metaalbutton: UIButton!
+    @IBOutlet weak var voedingbutton: UIButton!
+    @IBOutlet weak var textielbutton: UIButton!
+    @IBOutlet weak var houtbutton: UIButton!
+    
+    
+    @IBAction func pushthebutton(_ sender: UIButton) {
+
+        if (sender == metaalbutton) {
+            metaalbutton.setImage(UIImage(named: "IconMetaalBlauw.png"), for: UIControlState.normal)
+        } else if (sender == voedingbutton){
+            voedingbutton.setImage(UIImage(named: "IconVoedingGroen.png"), for: UIControlState.normal)
+        }else if (sender == textielbutton){
+            textielbutton.setImage(UIImage(named: "IconTextielOranje.png"), for: UIControlState.normal)
+        }else if (sender == houtbutton){
+
+            houtbutton.setImage(UIImage(named: "IconHoutRood.png"), for: UIControlState.normal)
+        }
+        sender.backgroundColor = UIColor.white
     }
+    
+    override func viewDidLoad() {
+        metaalbutton.setImage(UIImage(named: "IconMetaalWit.png"), for: UIControlState.normal)
+        voedingbutton.setImage(UIImage(named: "IconVoedingWit.png"), for: UIControlState.normal)
+        textielbutton.setImage(UIImage(named: "IconTextielWit.png"), for: UIControlState.normal)
+        houtbutton.setImage(UIImage(named: "IconHoutWit.png"), for: UIControlState.normal)
+    }
+    
+    
     override func viewDidAppear(_ animated: Bool) {
-        self.metaalButton.layer.borderWidth = 1
-        self.metaalButton.layer.borderColor = UIColor(red:222/255, green:225/255, blue:227/255, alpha: 1).cgColor
+//        self.ref = Database.database().reference()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -26,14 +54,20 @@ class KiesCategorieViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+extension UIButton {
+    open override func draw(_ rect: CGRect) {
+        let borderAlpha : CGFloat = 0.7
+        let cornerRadius : CGFloat = 10
+        //provide custom style
+        self.layer.borderWidth = 2.0
+        self.layer.borderColor = UIColor(white: 1.0, alpha: borderAlpha).cgColor
+        self.layer.cornerRadius = cornerRadius
+        self.clipsToBounds = true
+        self.contentMode = .center
+        self.imageView?.contentMode = .scaleAspectFit
+        
+        
     }
-    */
-
 }
