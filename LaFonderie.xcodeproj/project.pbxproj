@@ -35,6 +35,7 @@
 		9F7A743C20B6EF3E00FF5693 /* Bohem Press Free.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A743B20B6EF3E00FF5693 /* Bohem Press Free.otf */; };
 		9F7A743E20B6F0FD00FF5693 /* MaakTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A743D20B6F0FD00FF5693 /* MaakTeamViewController.swift */; };
 		9F7B165320BC2BA6000C8AFA /* WinnaarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */; };
+		9F7B165520BC34CF000C8AFA /* podium.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F7B165420BC34CF000C8AFA /* podium.png */; };
 		9FBE2AC820B6DF9800DB3650 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC720B6DF9800DB3650 /* Background.jpg */; };
 		9FBE2ACA20B6E26D00DB3650 /* BackgroundWOverlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */; };
 		9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */; };
@@ -73,6 +74,7 @@
 		9F7A743B20B6EF3E00FF5693 /* Bohem Press Free.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bohem Press Free.otf"; sourceTree = "<group>"; };
 		9F7A743D20B6F0FD00FF5693 /* MaakTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaakTeamViewController.swift; sourceTree = "<group>"; };
 		9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnaarViewController.swift; sourceTree = "<group>"; };
+		9F7B165420BC34CF000C8AFA /* podium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = podium.png; sourceTree = "<group>"; };
 		9FBE2AC720B6DF9800DB3650 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackgroundWOverlay.jpg; sourceTree = "<group>"; };
 		9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -166,6 +168,7 @@
 		9FBE2AC620B6DF2100DB3650 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				9F7B165420BC34CF000C8AFA /* podium.png */,
 				9F34B27020B718FC00F23B8F /* logoBrooD.png */,
 				9F34B27120B718FC00F23B8F /* logoBroodGroen.png */,
 				9F34B26D20B718FB00F23B8F /* logoHout.png */,
@@ -247,6 +250,7 @@
 				9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */,
 				9F7A743620B6EC2F00FF5693 /* logo.png in Resources */,
 				9F34B27C20B718FD00F23B8F /* textielLogo.png in Resources */,
+				9F7B165520BC34CF000C8AFA /* podium.png in Resources */,
 				9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */,
 				9FBE2ACA20B6E26D00DB3650 /* BackgroundWOverlay.jpg in Resources */,
 				9F7A743C20B6EF3E00FF5693 /* Bohem Press Free.otf in Resources */,

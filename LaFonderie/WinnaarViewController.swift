@@ -7,10 +7,15 @@
 //
 
 import UIKit
-
+import CoreData
 class WinnaarViewController: UIViewController {
 
     @IBOutlet weak var lblScore: UILabel!
+    
+    @IBOutlet weak var lblGebruikersnaam: UILabel!
+    
+    var managedContext:NSManagedObjectContext?
+    var opgehaaldeGebruiker = [Gebruiker]()
     var myScore = 0
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,14 +23,34 @@ class WinnaarViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-        lblScore.text = String(self.myScore)
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        self.managedContext = appDelegate.persistentContainer.viewContext
+        lblScore.text = "Score: \(self.myScore)"
+        loadData()
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
     
-
+    func loadData(){
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        
+        self.managedContext = appDelegate.persistentContainer.viewContext
+        let persoonFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Gebruiker")
+        //let opgehaaldePersonen:[Persoon]
+        do{
+            self.opgehaaldeGebruiker = try self.managedContext!.fetch(persoonFetch) as! [Gebruiker]
+            print(self.opgehaaldeGebruiker[0].gebruikersnaam!)
+            lblGebruikersnaam.text = self.opgehaaldeGebruiker[0].gebruikersnaam!
+            //print(self.opgehaaldePersonen.count)
+        }
+        catch{
+            fatalError("Failed to fetch employees: \(error)")
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

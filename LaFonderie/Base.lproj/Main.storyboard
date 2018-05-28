@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ClB-f7-fAD">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i4J-S6-12k">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -16,6 +16,9 @@
         </array>
         <array key="Lato-Regular.ttf">
             <string>Lato-Regular</string>
+        </array>
+        <array key="Montserrat-Bold.ttf">
+            <string>Montserrat-Bold</string>
         </array>
         <array key="Montserrat-Regular.ttf">
             <string>Montserrat-Regular</string>
@@ -48,7 +51,7 @@
                                     <color key="titleColor" red="0.74509803921568629" green="0.26666666666666666" blue="0.30196078431372547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="GHC-Fb-xlq" kind="show" id="9ch-Bh-61O"/>
+                                    <segue destination="GHC-Fb-xlq" kind="show" identifier="speelSolo" id="9ch-Bh-61O"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPE-Cw-rOt">
@@ -606,33 +609,64 @@ CATEGORIE JE WIL STARTEN</string>
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BackgroundWOverlay" translatesAutoresizingMaskIntoConstraints="NO" id="mjk-80-XAJ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINNAAR" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iSV-tR-txv">
-                                <rect key="frame" x="16" y="106" width="343" height="106"/>
+                                <rect key="frame" x="16" y="20" width="344" height="106"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="106" id="wHD-ne-ieM"/>
+                                    <constraint firstAttribute="height" constant="106" id="lCY-is-vLQ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="SSNicksonOne" family="SS Nickson One" pointSize="60"/>
-                                <color key="textColor" red="0.74509803919999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-eS-kk0">
-                                <rect key="frame" x="166" y="323" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lh-Lq-RZm">
+                                <rect key="frame" x="135" y="218" width="105" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="PJD-wU-gGA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="podium" translatesAutoresizingMaskIntoConstraints="NO" id="yMa-Jo-T2i">
+                                <rect key="frame" x="0.0" y="318" width="375" height="210"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xXZ-eS-kk0">
+                                <rect key="frame" x="101" y="268" width="175" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="slH-df-wJ3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Montserrat-Bold" family="Montserrat" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="iSV-tR-txv" firstAttribute="top" secondItem="64s-Uk-UNy" secondAttribute="top" constant="86" id="43F-Iu-Dxj"/>
-                            <constraint firstItem="iSV-tR-txv" firstAttribute="centerX" secondItem="xXZ-eS-kk0" secondAttribute="centerX" id="5gI-8K-SJD"/>
-                            <constraint firstItem="iSV-tR-txv" firstAttribute="leading" secondItem="PRf-mz-ck2" secondAttribute="leadingMargin" id="T2G-xA-Wok"/>
-                            <constraint firstItem="iSV-tR-txv" firstAttribute="trailing" secondItem="PRf-mz-ck2" secondAttribute="trailingMargin" id="YSO-Q5-krw"/>
-                            <constraint firstItem="xXZ-eS-kk0" firstAttribute="centerY" secondItem="PRf-mz-ck2" secondAttribute="centerY" id="oRs-uF-a79"/>
+                            <constraint firstItem="yMa-Jo-T2i" firstAttribute="top" secondItem="xXZ-eS-kk0" secondAttribute="bottom" constant="8" symbolic="YES" id="4Yf-98-OkU"/>
+                            <constraint firstItem="iSV-tR-txv" firstAttribute="top" secondItem="64s-Uk-UNy" secondAttribute="top" id="4cN-rL-BAn"/>
+                            <constraint firstItem="xXZ-eS-kk0" firstAttribute="leading" secondItem="64s-Uk-UNy" secondAttribute="leading" constant="101" id="Ff6-RZ-wd3"/>
+                            <constraint firstItem="iSV-tR-txv" firstAttribute="centerX" secondItem="xXZ-eS-kk0" secondAttribute="centerX" id="LNb-jf-mYM"/>
+                            <constraint firstItem="mjk-80-XAJ" firstAttribute="trailing" secondItem="yMa-Jo-T2i" secondAttribute="trailing" id="M60-Go-VkS"/>
+                            <constraint firstItem="mjk-80-XAJ" firstAttribute="bottom" secondItem="64s-Uk-UNy" secondAttribute="bottom" id="OWz-sj-hRA"/>
+                            <constraint firstItem="6Lh-Lq-RZm" firstAttribute="top" secondItem="iSV-tR-txv" secondAttribute="bottom" constant="92" id="Oap-Xs-wDj"/>
+                            <constraint firstItem="6Lh-Lq-RZm" firstAttribute="leading" secondItem="64s-Uk-UNy" secondAttribute="leading" constant="135" id="Rp2-s9-54I"/>
+                            <constraint firstItem="64s-Uk-UNy" firstAttribute="bottom" secondItem="yMa-Jo-T2i" secondAttribute="bottom" constant="139" id="RwO-bw-qz5"/>
+                            <constraint firstItem="6Lh-Lq-RZm" firstAttribute="centerX" secondItem="yMa-Jo-T2i" secondAttribute="centerX" id="SeA-Ya-2Zu"/>
+                            <constraint firstItem="mjk-80-XAJ" firstAttribute="leading" secondItem="yMa-Jo-T2i" secondAttribute="leading" id="c4l-w0-VwA"/>
+                            <constraint firstItem="iSV-tR-txv" firstAttribute="leading" secondItem="PRf-mz-ck2" secondAttribute="leadingMargin" id="c9E-ZX-Got"/>
+                            <constraint firstAttribute="trailing" secondItem="mjk-80-XAJ" secondAttribute="trailing" id="dop-Lv-LDV"/>
+                            <constraint firstItem="mjk-80-XAJ" firstAttribute="leading" secondItem="PRf-mz-ck2" secondAttribute="leading" id="hRi-Sh-bAM"/>
+                            <constraint firstItem="mjk-80-XAJ" firstAttribute="top" secondItem="PRf-mz-ck2" secondAttribute="top" id="iQ5-1K-LdE"/>
+                            <constraint firstItem="iSV-tR-txv" firstAttribute="centerX" secondItem="6Lh-Lq-RZm" secondAttribute="centerX" id="s3q-Ii-dzC"/>
+                            <constraint firstItem="xXZ-eS-kk0" firstAttribute="top" secondItem="6Lh-Lq-RZm" secondAttribute="bottom" constant="8" symbolic="YES" id="umT-18-zLu"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="64s-Uk-UNy"/>
                     </view>
                     <connections>
+                        <outlet property="lblGebruikersnaam" destination="6Lh-Lq-RZm" id="s23-tB-YcK"/>
                         <outlet property="lblScore" destination="xXZ-eS-kk0" id="F79-f3-aJl"/>
                     </connections>
                 </viewController>
@@ -678,8 +712,9 @@ CATEGORIE JE WIL STARTEN</string>
     <resources>
         <image name="BackgroundWOverlay" width="1567" height="2780"/>
         <image name="logo" width="500" height="567"/>
+        <image name="podium" width="341" height="155"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="UVB-uY-POO"/>
+        <segue reference="9ch-Bh-61O"/>
     </inferredMetricsTieBreakers>
 </document>
