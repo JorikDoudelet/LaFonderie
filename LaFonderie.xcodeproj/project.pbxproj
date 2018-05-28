@@ -21,7 +21,7 @@
 		9F34B27A20B718FD00F23B8F /* logoHoutWit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F34B27220B718FD00F23B8F /* logoHoutWit.png */; };
 		9F34B27B20B718FD00F23B8F /* MetaalLogoBlauw.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F34B27320B718FD00F23B8F /* MetaalLogoBlauw.png */; };
 		9F34B27C20B718FD00F23B8F /* textielLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F34B27420B718FD00F23B8F /* textielLogo.png */; };
-		9F34B27E20B72F6E00F23B8F /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34B27D20B72F6E00F23B8F /* TestViewController.swift */; };
+		9F34B27E20B72F6E00F23B8F /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34B27D20B72F6E00F23B8F /* QuizViewController.swift */; };
 		9F471E9420B7F7D8003BE5BB /* GebruikerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F471E9320B7F7D8003BE5BB /* GebruikerViewController.swift */; };
 		9F6A372F20B6A8F800E11018 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6A372E20B6A8F800E11018 /* AppDelegate.swift */; };
 		9F6A373120B6A8F800E11018 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6A373020B6A8F800E11018 /* ViewController.swift */; };
@@ -58,7 +58,7 @@
 		9F34B27220B718FD00F23B8F /* logoHoutWit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoHoutWit.png; sourceTree = "<group>"; };
 		9F34B27320B718FD00F23B8F /* MetaalLogoBlauw.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MetaalLogoBlauw.png; sourceTree = "<group>"; };
 		9F34B27420B718FD00F23B8F /* textielLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = textielLogo.png; sourceTree = "<group>"; };
-		9F34B27D20B72F6E00F23B8F /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		9F34B27D20B72F6E00F23B8F /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
 		9F471E9320B7F7D8003BE5BB /* GebruikerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GebruikerViewController.swift; sourceTree = "<group>"; };
 		9F6A372B20B6A8F800E11018 /* LaFonderie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LaFonderie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F6A372E20B6A8F800E11018 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -144,7 +144,7 @@
 				9F6A373520B6A8F800E11018 /* LaFonderie.xcdatamodeld */,
 				9F7A743D20B6F0FD00FF5693 /* MaakTeamViewController.swift */,
 				9F34B26B20B702EB00F23B8F /* KiesCategorieViewController.swift */,
-				9F34B27D20B72F6E00F23B8F /* TestViewController.swift */,
+				9F34B27D20B72F6E00F23B8F /* QuizViewController.swift */,
 				9F471E9320B7F7D8003BE5BB /* GebruikerViewController.swift */,
 				6C078D9520B856ED0073BD16 /* buttonsMetAfbeeldingen.swift */,
 				6C94E02820BBF651008D2369 /* tillosteststoryboard.storyboard */,
@@ -327,7 +327,8 @@
 				9F6A373720B6A8F800E11018 /* LaFonderie.xcdatamodeld in Sources */,
 				9F34B26C20B702EB00F23B8F /* KiesCategorieViewController.swift in Sources */,
 				9F6A372F20B6A8F800E11018 /* AppDelegate.swift in Sources */,
-				9F34B27E20B72F6E00F23B8F /* TestViewController.swift in Sources */,
+				91D139E620B80C030041F3DC /* QRReaderViewController.swift in Sources */,
+				9F34B27E20B72F6E00F23B8F /* QuizViewController.swift in Sources */,
 				9F471E9420B7F7D8003BE5BB /* GebruikerViewController.swift in Sources */,
 				9F7A743E20B6F0FD00FF5693 /* MaakTeamViewController.swift in Sources */,
 			);

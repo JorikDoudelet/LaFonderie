@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GHC-Fb-xlq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="i4J-S6-12k">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -543,10 +543,10 @@ CATEGORIE JE WIL STARTEN</string>
             </objects>
             <point key="canvasLocation" x="3901.5999999999999" y="161.46926536731635"/>
         </scene>
-        <!--Test View Controller-->
+        <!--Quiz View Controller-->
         <scene sceneID="4XI-GF-xSF">
             <objects>
-                <viewController id="i4J-S6-12k" customClass="TestViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="i4J-S6-12k" customClass="QuizViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="GVl-Xh-M8l">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -559,7 +559,7 @@ CATEGORIE JE WIL STARTEN</string>
                             </label>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SwQ-dK-ii3">
                                 <rect key="frame" x="16" y="225" width="343" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="1su-9k-a8M"/>
                                 </constraints>
@@ -572,7 +572,7 @@ CATEGORIE JE WIL STARTEN</string>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZOv-zQ-OgE">
                                 <rect key="frame" x="16" y="281" width="343" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="b0I-As-G3h"/>
                                 </constraints>
@@ -585,7 +585,7 @@ CATEGORIE JE WIL STARTEN</string>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eni-kr-fC6">
                                 <rect key="frame" x="16" y="337" width="343" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="e0h-Wy-abz"/>
                                 </constraints>
@@ -596,9 +596,9 @@ CATEGORIE JE WIL STARTEN</string>
                                     <action selector="tapAntwoord:" destination="i4J-S6-12k" eventType="touchUpInside" id="vbW-bG-xyy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-o6-PsD">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ckg-o6-PsD">
                                 <rect key="frame" x="16" y="393" width="343" height="48"/>
-                                <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.74509803919999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="DOH-89-2rr"/>
                                 </constraints>
@@ -633,11 +633,30 @@ CATEGORIE JE WIL STARTEN</string>
                     </view>
                     <connections>
                         <outlet property="lblVraag" destination="m5x-K7-RT9" id="Acw-sy-axv"/>
+                        <outletCollection property="antwoordButtons" destination="ZOv-zQ-OgE" collectionClass="NSMutableArray" id="d7s-cp-P02"/>
+                        <outletCollection property="antwoordButtons" destination="SwQ-dK-ii3" collectionClass="NSMutableArray" id="XgE-Wy-6JG"/>
+                        <outletCollection property="antwoordButtons" destination="eni-kr-fC6" collectionClass="NSMutableArray" id="GyW-vl-qjg"/>
+                        <outletCollection property="antwoordButtons" destination="ckg-o6-PsD" collectionClass="NSMutableArray" id="dqg-eC-d5r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Wl-P0-oZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="4904.8000000000002" y="160.56971514242881"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="OTR-CB-MlS">
+            <objects>
+                <viewController id="Szt-pO-xW6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="cPe-EA-t8C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="VoR-Li-uq4"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cMb-JP-jSa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4444" y="-604"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="rhB-1J-8MW">
@@ -664,6 +683,6 @@ CATEGORIE JE WIL STARTEN</string>
         <image name="logo" width="500" height="567"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9ch-Bh-61O"/>
+        <segue reference="UVB-uY-POO"/>
     </inferredMetricsTieBreakers>
 </document>
