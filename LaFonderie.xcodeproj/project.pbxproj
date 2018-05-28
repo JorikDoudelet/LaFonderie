@@ -34,6 +34,7 @@
 		9F7A743A20B6EF1400FF5693 /* S&S Nickson One.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A743920B6EF1400FF5693 /* S&S Nickson One.otf */; };
 		9F7A743C20B6EF3E00FF5693 /* Bohem Press Free.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9F7A743B20B6EF3E00FF5693 /* Bohem Press Free.otf */; };
 		9F7A743E20B6F0FD00FF5693 /* MaakTeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7A743D20B6F0FD00FF5693 /* MaakTeamViewController.swift */; };
+		9F7B165320BC2BA6000C8AFA /* WinnaarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */; };
 		9FBE2AC820B6DF9800DB3650 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC720B6DF9800DB3650 /* Background.jpg */; };
 		9FBE2ACA20B6E26D00DB3650 /* BackgroundWOverlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */; };
 		9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */; };
@@ -71,6 +72,7 @@
 		9F7A743920B6EF1400FF5693 /* S&S Nickson One.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "S&S Nickson One.otf"; sourceTree = "<group>"; };
 		9F7A743B20B6EF3E00FF5693 /* Bohem Press Free.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Bohem Press Free.otf"; sourceTree = "<group>"; };
 		9F7A743D20B6F0FD00FF5693 /* MaakTeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaakTeamViewController.swift; sourceTree = "<group>"; };
+		9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnaarViewController.swift; sourceTree = "<group>"; };
 		9FBE2AC720B6DF9800DB3650 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackgroundWOverlay.jpg; sourceTree = "<group>"; };
 		9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				9F34B27D20B72F6E00F23B8F /* QuizViewController.swift */,
 				9F471E9320B7F7D8003BE5BB /* GebruikerViewController.swift */,
 				91D139E520B80C030041F3DC /* QRReaderViewController.swift */,
+				9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */,
 			);
 			path = LaFonderie;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6A373120B6A8F800E11018 /* ViewController.swift in Sources */,
+				9F7B165320BC2BA6000C8AFA /* WinnaarViewController.swift in Sources */,
 				9F6A373720B6A8F800E11018 /* LaFonderie.xcdatamodeld in Sources */,
 				9F34B26C20B702EB00F23B8F /* KiesCategorieViewController.swift in Sources */,
 				9F6A372F20B6A8F800E11018 /* AppDelegate.swift in Sources */,
