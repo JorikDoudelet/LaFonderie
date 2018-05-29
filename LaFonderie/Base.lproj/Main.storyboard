@@ -424,24 +424,6 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXB-ko-X6o">
-                                <rect key="frame" x="189" y="408" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="iFS-SV-xvn"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X2-em-7BB">
-                                <rect key="frame" x="189" y="288" width="90" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="mND-ai-eAZ"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m1Z-BG-D2g">
                                 <rect key="frame" x="96" y="603" width="183" height="44"/>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -468,23 +450,40 @@ CATEGORIE JE WIL STARTEN</string>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-UY-40R">
-                                <rect key="frame" x="68" y="288" width="90" height="90"/>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zeo-UY-40R" userLabel="metaalbutton">
+                                <rect key="frame" x="82" y="286" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="sD5-bZ-BcJ"/>
+                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="3B8-GZ-BfU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-tR-T6d">
-                                <rect key="frame" x="68" y="408" width="90" height="90"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GXB-ko-X6o" userLabel="voedingbutton">
+                                <rect key="frame" x="203" y="406" width="90" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="Mud-WX-EF1"/>
+                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="P7e-Ri-LW7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wSl-tR-T6d" userLabel="textielbutton">
+                                <rect key="frame" x="82" y="406" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="Eoa-Qw-6aD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5X2-em-7BB" userLabel="houtbutton">
+                                <rect key="frame" x="203" y="286" width="90" height="90"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="pushthebutton:" destination="ClB-f7-fAD" eventType="touchUpInside" id="12s-Tu-B8Y"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -506,10 +505,10 @@ CATEGORIE JE WIL STARTEN</string>
                         <viewLayoutGuide key="safeArea" id="YsA-tk-jtq"/>
                     </view>
                     <connections>
-                        <outlet property="houtbutton" destination="wSl-tR-T6d" id="Nnm-Yn-KDW"/>
-                        <outlet property="metaalbutton" destination="Zeo-UY-40R" id="nem-DH-2bQ"/>
-                        <outlet property="textielbutton" destination="GXB-ko-X6o" id="eRq-x1-uOB"/>
-                        <outlet property="voedingbutton" destination="5X2-em-7BB" id="hHO-0c-XOH"/>
+                        <outletCollection property="categorieenButtons" destination="Zeo-UY-40R" collectionClass="NSMutableArray" id="fUe-8t-eEa"/>
+                        <outletCollection property="categorieenButtons" destination="5X2-em-7BB" collectionClass="NSMutableArray" id="aWs-5Z-LzH"/>
+                        <outletCollection property="categorieenButtons" destination="wSl-tR-T6d" collectionClass="NSMutableArray" id="Uun-5m-BiY"/>
+                        <outletCollection property="categorieenButtons" destination="GXB-ko-X6o" collectionClass="NSMutableArray" id="1YO-3Y-qsy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MTC-2i-ese" userLabel="First Responder" sceneMemberID="firstResponder"/>

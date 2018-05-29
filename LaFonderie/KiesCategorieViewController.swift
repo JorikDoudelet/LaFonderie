@@ -16,37 +16,73 @@ class KiesCategorieViewController: UIViewController {
     let cornerRadius : CGFloat = 10
 
     
-    @IBOutlet weak var metaalbutton: UIButton!
-    @IBOutlet weak var voedingbutton: UIButton!
-    @IBOutlet weak var textielbutton: UIButton!
-    @IBOutlet weak var houtbutton: UIButton!
+//    @IBOutlet weak var metaalbutton: UIButton!
+//    @IBOutlet weak var voedingbutton: UIButton!
+//    @IBOutlet weak var textielbutton: UIButton!
+//    @IBOutlet weak var houtbutton: UIButton!
+    
+    @IBOutlet var categorieenButtons: [UIButton]!
+    
     
     
     @IBAction func pushthebutton(_ sender: UIButton) {
 
-        if (sender == metaalbutton) {
-            metaalbutton.setImage(UIImage(named: "IconMetaalBlauw.png"), for: UIControlState.normal)
-        } else if (sender == voedingbutton){
-            voedingbutton.setImage(UIImage(named: "IconVoedingGroen.png"), for: UIControlState.normal)
-        }else if (sender == textielbutton){
-            textielbutton.setImage(UIImage(named: "IconTextielOranje.png"), for: UIControlState.normal)
-        }else if (sender == houtbutton){
-
-            houtbutton.setImage(UIImage(named: "IconHoutRood.png"), for: UIControlState.normal)
+        if (sender == categorieenButtons[0]) {
+            categorieenButtons[0].setImage(UIImage(named: "IconMetaalBlauw.png"), for: UIControlState.normal)
+        } else if (sender == categorieenButtons[1]){
+            categorieenButtons[1].setImage(UIImage(named: "IconVoedingGroen.png"), for: UIControlState.normal)
+        }else if (sender == categorieenButtons[2]){
+            categorieenButtons[2].setImage(UIImage(named: "IconTextielOranje.png"), for: UIControlState.normal)
+        }else if (sender == categorieenButtons[3]){
+            categorieenButtons[3].setImage(UIImage(named: "IconHoutRood.png"), for: UIControlState.normal)
+        }
+        if (sender != categorieenButtons[0]) {
+            categorieenButtons[0].setImage(UIImage(named: "IconMetaalWit.png"), for: UIControlState.normal)
+        }
+        if (sender != categorieenButtons[1]){
+            categorieenButtons[1].setImage(UIImage(named: "IconVoedingWit.png"), for: UIControlState.normal)
+        }
+        if (sender != categorieenButtons[2]){
+            categorieenButtons[2].setImage(UIImage(named: "IconTextielWit.png"), for: UIControlState.normal)
+        }
+        if (sender != categorieenButtons[3]){
+            categorieenButtons[3].setImage(UIImage(named: "IconHoutWit.png"), for: UIControlState.normal)
         }
         sender.backgroundColor = UIColor.white
+       
+        for mijnbuttons in categorieenButtons {
+            
+            
+            
+            
+            if (mijnbuttons != sender){
+                mijnbuttons.backgroundColor = UIColor.clear
+                
+                
+            }
+            
+        }
+       
     }
     
     override func viewDidLoad() {
-        metaalbutton.setImage(UIImage(named: "IconMetaalWit.png"), for: UIControlState.normal)
-        voedingbutton.setImage(UIImage(named: "IconVoedingWit.png"), for: UIControlState.normal)
-        textielbutton.setImage(UIImage(named: "IconTextielWit.png"), for: UIControlState.normal)
-        houtbutton.setImage(UIImage(named: "IconHoutWit.png"), for: UIControlState.normal)
+        categorieenButtons[0].setImage(UIImage(named: "IconMetaalWit.png"), for: UIControlState.normal)
+        categorieenButtons[1].setImage(UIImage(named: "IconVoedingWit.png"), for: UIControlState.normal)
+        categorieenButtons[2].setImage(UIImage(named: "IconTextielWit.png"), for: UIControlState.normal)
+        categorieenButtons[3].setImage(UIImage(named: "IconHoutWit.png"), for: UIControlState.normal)
     }
     
     
     override func viewDidAppear(_ animated: Bool) {
 //        self.ref = Database.database().reference()
+        for mijnbuttons in categorieenButtons {
+            mijnbuttons.layer.cornerRadius = 5
+            mijnbuttons.layer.borderWidth = 1
+            mijnbuttons.layer.borderColor = UIColor.white.cgColor
+            mijnbuttons.clipsToBounds = true
+          mijnbuttons.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
