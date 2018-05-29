@@ -51,6 +51,10 @@ class KiesCategorieViewController: UIViewController {
         sender.backgroundColor = UIColor.white
        
         for mijnbuttons in categorieenButtons {
+            
+            
+            
+            
             if (mijnbuttons != sender){
                 mijnbuttons.backgroundColor = UIColor.clear
                 
@@ -71,6 +75,14 @@ class KiesCategorieViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
 //        self.ref = Database.database().reference()
+        for mijnbuttons in categorieenButtons {
+            mijnbuttons.layer.cornerRadius = 5
+            mijnbuttons.layer.borderWidth = 1
+            mijnbuttons.layer.borderColor = UIColor.white.cgColor
+            mijnbuttons.clipsToBounds = true
+          mijnbuttons.imageView?.contentMode = UIViewContentMode.scaleAspectFit
+        }
+        
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
