@@ -2,9 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/tillo.loozen/Documents/LaFonderie/LaFonderie/tillotestViewController.swift">
-   </FileRef>
-   <FileRef
       location = "group:LaFonderie.xcodeproj">
    </FileRef>
    <FileRef

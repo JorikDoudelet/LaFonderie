@@ -8,9 +8,12 @@
 
 import UIKit
 import FirebaseDatabase
+import CoreData
 class GebruikerViewController: UIViewController {
     
     var ref: DatabaseReference!
+    var isSolo:Bool = false
+    var managedContext:NSManagedObjectContext?
     @IBOutlet weak var txtGebruikernaam: UITextField!
     
     override func viewDidLoad() {
@@ -19,6 +22,29 @@ class GebruikerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
+        self.managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Gebruiker")
+        
+        // Configure Fetch Request
+        fetchRequest.includesPropertyValues = false
+        
+        do {
+            let items = try managedContext?.fetch(fetchRequest) as! [NSManagedObject]
+            
+            for item in items {
+                managedContext?.delete(item)
+            }
+            
+            // Save Changes
+            try managedContext?.save()
+            
+        } catch {
+            // Error Handling
+            // ...
+        }
+        
+        print(isSolo)
         self.ref = Database.database().reference()
     }
     override func didReceiveMemoryWarning() {
@@ -36,14 +62,27 @@ class GebruikerViewController: UIViewController {
         // Pass the selected object to the new view controller.
         if segue.identifier == "naarCategorie"
         {
-            let persoon = [
+            /*let persoon = [
                 "gebruikersnaam":  txtGebruikernaam.text,
                 "totaalPunten": 0,
                 "Scores": ["metaalTotaal":0,"houtTotaal":0,"textielTotaal":0,"voedingTotaal":0]
                 ] as [String : Any]
             
-            self.ref.child("Persoon").childByAutoId().setValue(persoon)
+            self.ref.child("Persoon").childByAutoId().setValue(persoon)*/
             if let destinationVC = segue.destination as? KiesCategorieViewController {
+                if(isSolo){
+                    let gebruiker = NSEntityDescription.insertNewObject(forEntityName: "Gebruiker", into: self.managedContext!) as! Gebruiker
+                    
+                    gebruiker.gebruikersnaam = txtGebruikernaam.text
+                    
+                    do{
+                        try self.managedContext!.save()
+                    }
+                    catch{
+                        fatalError("Failure to save context: \(error)")
+                        
+                    }
+                }
             }
         }
     }
