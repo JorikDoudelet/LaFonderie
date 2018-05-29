@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		6C5312B120BD53BC007D39D7 /* mijnWebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5312B020BD53BC007D39D7 /* mijnWebviewController.swift */; };
+		6C5312B420BD8E64007D39D7 /* videoplayback.m4v in Resources */ = {isa = PBXBuildFile; fileRef = 6C5312B320BD8E18007D39D7 /* videoplayback.m4v */; };
 		91D139E620B80C030041F3DC /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D139E520B80C030041F3DC /* QRReaderViewController.swift */; };
 		9F0C093C20BD374E002715FB /* Tesla.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C093920BD374D002715FB /* Tesla.png */; };
 		9F0C093D20BD374E002715FB /* Bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C093A20BD374E002715FB /* Bell.png */; };
@@ -49,6 +50,7 @@
 /* Begin PBXFileReference section */
 		0D3D646859E8F3CB75F15FE6 /* Pods-LaFonderie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaFonderie.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie.release.xcconfig"; sourceTree = "<group>"; };
 		6C5312B020BD53BC007D39D7 /* mijnWebviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mijnWebviewController.swift; sourceTree = "<group>"; };
+		6C5312B320BD8E18007D39D7 /* videoplayback.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; name = videoplayback.m4v; path = ../../../../Downloads/videoplayback.m4v; sourceTree = "<group>"; };
 		91D139E520B80C030041F3DC /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
 		9F0C093920BD374D002715FB /* Tesla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tesla.png; sourceTree = "<group>"; };
 		9F0C093A20BD374E002715FB /* Bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bell.png; sourceTree = "<group>"; };
@@ -111,6 +113,14 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		6C5312B220BD8E04007D39D7 /* videos */ = {
+			isa = PBXGroup;
+			children = (
+				6C5312B320BD8E18007D39D7 /* videoplayback.m4v */,
+			);
+			path = videos;
+			sourceTree = "<group>";
+		};
 		84BE0AC8DCEFF46A1B9EDB6F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 		9F6A372D20B6A8F800E11018 /* LaFonderie */ = {
 			isa = PBXGroup;
 			children = (
+				6C5312B220BD8E04007D39D7 /* videos */,
 				9F7A743020B6EA1200FF5693 /* fonts */,
 				9FBE2AC620B6DF2100DB3650 /* images */,
 				9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */,
@@ -257,6 +268,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C5312B420BD8E64007D39D7 /* videoplayback.m4v in Resources */,
 				9F34B27920B718FD00F23B8F /* logoBroodGroen.png in Resources */,
 				9F7A743320B6EA3300FF5693 /* Montserrat-Regular.ttf in Resources */,
 				9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */,

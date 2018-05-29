@@ -22,6 +22,7 @@ class mijnWebviewController: UIViewController {
         let mijnurlrequest = URLRequest(url: url!)
         mijnwebview.load(mijnurlrequest)
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
