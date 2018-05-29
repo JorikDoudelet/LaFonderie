@@ -13,8 +13,10 @@ class GebruikerViewController: UIViewController {
     
     var ref: DatabaseReference!
     var isSolo:Bool = false
+    var avatarNaam:String = ""
     var managedContext:NSManagedObjectContext?
     @IBOutlet weak var txtGebruikernaam: UITextField!
+    @IBOutlet var avatarButtons: [UIButton]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,6 +54,20 @@ class GebruikerViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func avatarSelected(_ sender: Any)
+    {
+        let tappedButton = sender as! UIButton
+        
+        tappedButton.backgroundColor = UIColor.gray
+        tappedButton.isSelected = true
+        //avatarNaam = tappedButton.currentImage
+        for button in avatarButtons{
+            if(button != tappedButton){
+                button.backgroundColor = UIColor.clear
+                button.isSelected = false
+            }
+        }
+    }
     
     
     // MARK: - Navigation

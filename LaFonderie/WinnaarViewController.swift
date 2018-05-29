@@ -14,6 +14,7 @@ class WinnaarViewController: UIViewController {
     
     @IBOutlet weak var lblGebruikersnaam: UILabel!
     
+    @IBOutlet weak var podiumImage: UIImageView!
     var managedContext:NSManagedObjectContext?
     var opgehaaldeGebruiker = [Gebruiker]()
     var myScore = 0
@@ -23,6 +24,7 @@ class WinnaarViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
+        
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
         self.managedContext = appDelegate.persistentContainer.viewContext
         lblScore.text = "Score: \(self.myScore)"
