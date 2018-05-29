@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GHC-Fb-xlq">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="G1f-os-sGL">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -185,6 +185,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9zZ-zY-lK8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1997.5999999999999" y="509.59520239880067"/>
+        </scene>
+        <!--Reader View Controller-->
+        <scene sceneID="tpP-rE-osy">
+            <objects>
+                <viewController id="q5g-p3-ctZ" customClass="QRReaderViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fNz-ae-9Mb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dSv-aJ-u8M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57414853570000002" green="0.57416242360000003" blue="0.57415497299999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="fjM-YG-38o"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Dia-YT-PSp"/>
+                    <connections>
+                        <outlet property="mijnpreview" destination="dSv-aJ-u8M" id="gfn-0W-ZvD"/>
+                        <segue destination="RMB-sE-bYm" kind="show" identifier="openQrScannerLink" id="2c8-PZ-l3J"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TGS-1Z-MDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3952.8000000000002" y="859.52023988005999"/>
+        </scene>
+        <!--Mijn Webview Controller-->
+        <scene sceneID="5jG-8k-Fc1">
+            <objects>
+                <viewController id="RMB-sE-bYm" customClass="mijnWebviewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F5a-Xh-GgN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zur-a9-vxQ">
+                                <rect key="frame" x="16" y="20" width="343" height="627"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="cGv-Bf-wyn"/>
+                    </view>
+                    <connections>
+                        <outlet property="mijnwebview" destination="Zur-a9-vxQ" id="23Q-uh-uTO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kIc-pT-y1g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4840.8000000000002" y="859.52023988005999"/>
         </scene>
         <!--Maak Team View Controller-->
         <scene sceneID="c9M-r8-z0U">
@@ -741,6 +797,24 @@ CATEGORIE JE WIL STARTEN</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yn8-ci-cmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="134"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Xn0-ph-RBu">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="G1f-os-sGL" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ayU-gU-hqd">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q5g-p3-ctZ" kind="relationship" relationship="rootViewController" id="bbo-BN-zRX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vHc-o9-hoU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3013.5999999999999" y="859.52023988005999"/>
         </scene>
     </scenes>
     <resources>

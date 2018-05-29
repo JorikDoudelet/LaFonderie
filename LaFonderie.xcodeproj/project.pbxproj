@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6C5312B120BD53BC007D39D7 /* mijnWebviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C5312B020BD53BC007D39D7 /* mijnWebviewController.swift */; };
 		91D139E620B80C030041F3DC /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91D139E520B80C030041F3DC /* QRReaderViewController.swift */; };
 		9F0C093C20BD374E002715FB /* Tesla.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C093920BD374D002715FB /* Tesla.png */; };
 		9F0C093D20BD374E002715FB /* Bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C093A20BD374E002715FB /* Bell.png */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		0D3D646859E8F3CB75F15FE6 /* Pods-LaFonderie.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaFonderie.release.xcconfig"; path = "Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie.release.xcconfig"; sourceTree = "<group>"; };
+		6C5312B020BD53BC007D39D7 /* mijnWebviewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mijnWebviewController.swift; sourceTree = "<group>"; };
 		91D139E520B80C030041F3DC /* QRReaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
 		9F0C093920BD374D002715FB /* Tesla.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Tesla.png; sourceTree = "<group>"; };
 		9F0C093A20BD374E002715FB /* Bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Bell.png; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 				9F471E9320B7F7D8003BE5BB /* GebruikerViewController.swift */,
 				91D139E520B80C030041F3DC /* QRReaderViewController.swift */,
 				9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */,
+				6C5312B020BD53BC007D39D7 /* mijnWebviewController.swift */,
 			);
 			path = LaFonderie;
 			sourceTree = "<group>";
@@ -334,6 +337,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6A373120B6A8F800E11018 /* ViewController.swift in Sources */,
+				6C5312B120BD53BC007D39D7 /* mijnWebviewController.swift in Sources */,
 				9F7B165320BC2BA6000C8AFA /* WinnaarViewController.swift in Sources */,
 				9F6A373720B6A8F800E11018 /* LaFonderie.xcdatamodeld in Sources */,
 				9F34B26C20B702EB00F23B8F /* KiesCategorieViewController.swift in Sources */,
@@ -487,12 +491,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQK2P5V9WM;
 				INFOPLIST_FILE = LaFonderie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunnarhemmeryckx.LaFonderie;
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.gunnarhemmeryckx.LaFonderie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -505,12 +510,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AQK2P5V9WM;
 				INFOPLIST_FILE = LaFonderie/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = gunnarhemmeryckx.LaFonderie;
+				PRODUCT_BUNDLE_IDENTIFIER = ehb.gunnarhemmeryckx.LaFonderie;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
