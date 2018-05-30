@@ -44,6 +44,11 @@
 		9FBE2AC820B6DF9800DB3650 /* Background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC720B6DF9800DB3650 /* Background.jpg */; };
 		9FBE2ACA20B6E26D00DB3650 /* BackgroundWOverlay.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */; };
 		9FD49D2D20B6AD71009E0BC5 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */; };
+		C0B67D8F20BE8E8100BBED41 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = C0B67D8E20BE8E8000BBED41 /* art.scnassets */; };
+		C0B67D9420BE8EFB00BBED41 /* FirstArViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B67D9020BE8EFA00BBED41 /* FirstArViewController.swift */; };
+		C0B67D9520BE8EFB00BBED41 /* ThirdArViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B67D9120BE8EFA00BBED41 /* ThirdArViewController.swift */; };
+		C0B67D9620BE8EFB00BBED41 /* FourthArViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B67D9220BE8EFA00BBED41 /* FourthArViewController.swift */; };
+		C0B67D9720BE8EFB00BBED41 /* SecondArViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0B67D9320BE8EFB00BBED41 /* SecondArViewController.swift */; };
 		D9A66B03FF33B03F83B4E65A /* Pods_LaFonderie.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */; };
 /* End PBXBuildFile section */
 
@@ -88,6 +93,11 @@
 		9FBE2AC720B6DF9800DB3650 /* Background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Background.jpg; sourceTree = "<group>"; };
 		9FBE2AC920B6E26C00DB3650 /* BackgroundWOverlay.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BackgroundWOverlay.jpg; sourceTree = "<group>"; };
 		9FD49D2C20B6AD70009E0BC5 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		C0B67D8E20BE8E8000BBED41 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		C0B67D9020BE8EFA00BBED41 /* FirstArViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstArViewController.swift; sourceTree = "<group>"; };
+		C0B67D9120BE8EFA00BBED41 /* ThirdArViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdArViewController.swift; sourceTree = "<group>"; };
+		C0B67D9220BE8EFA00BBED41 /* FourthArViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FourthArViewController.swift; sourceTree = "<group>"; };
+		C0B67D9320BE8EFB00BBED41 /* SecondArViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondArViewController.swift; sourceTree = "<group>"; };
 		DBEC998831A1263E62EE7E53 /* Pods-LaFonderie.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LaFonderie.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LaFonderie/Pods-LaFonderie.debug.xcconfig"; sourceTree = "<group>"; };
 		FC0DD983DCA7115F03DC1E2A /* Pods_LaFonderie.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LaFonderie.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -157,10 +167,15 @@
 				9F6A372E20B6A8F800E11018 /* AppDelegate.swift */,
 				9F6A373020B6A8F800E11018 /* ViewController.swift */,
 				9F6A373220B6A8F800E11018 /* Main.storyboard */,
+				C0B67D8E20BE8E8000BBED41 /* art.scnassets */,
 				9F6A373820B6A8FA00E11018 /* Assets.xcassets */,
 				9F6A373A20B6A8FA00E11018 /* LaunchScreen.storyboard */,
 				9F6A373D20B6A8FA00E11018 /* Info.plist */,
 				9F6A373520B6A8F800E11018 /* LaFonderie.xcdatamodeld */,
+				C0B67D9020BE8EFA00BBED41 /* FirstArViewController.swift */,
+				C0B67D9220BE8EFA00BBED41 /* FourthArViewController.swift */,
+				C0B67D9320BE8EFB00BBED41 /* SecondArViewController.swift */,
+				C0B67D9120BE8EFA00BBED41 /* ThirdArViewController.swift */,
 				9F7A743D20B6F0FD00FF5693 /* MaakTeamViewController.swift */,
 				9F34B26B20B702EB00F23B8F /* KiesCategorieViewController.swift */,
 				9F34B27D20B72F6E00F23B8F /* QuizViewController.swift */,
@@ -285,6 +300,7 @@
 				9FBE2AC820B6DF9800DB3650 /* Background.jpg in Resources */,
 				9F7A743420B6EA3300FF5693 /* Montserrat-Bold.ttf in Resources */,
 				9F6A373920B6A8FA00E11018 /* Assets.xcassets in Resources */,
+				C0B67D8F20BE8E8100BBED41 /* art.scnassets in Resources */,
 				9F34B26820B6F36200F23B8F /* Lato-Regular.ttf in Resources */,
 				9F7A743A20B6EF1400FF5693 /* S&S Nickson One.otf in Resources */,
 				9F0C093D20BD374E002715FB /* Bell.png in Resources */,
@@ -349,13 +365,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F6A373120B6A8F800E11018 /* ViewController.swift in Sources */,
+				C0B67D9420BE8EFB00BBED41 /* FirstArViewController.swift in Sources */,
 				6C5312B120BD53BC007D39D7 /* mijnWebviewController.swift in Sources */,
+				C0B67D9520BE8EFB00BBED41 /* ThirdArViewController.swift in Sources */,
 				9F7B165320BC2BA6000C8AFA /* WinnaarViewController.swift in Sources */,
 				9F6A373720B6A8F800E11018 /* LaFonderie.xcdatamodeld in Sources */,
 				9F34B26C20B702EB00F23B8F /* KiesCategorieViewController.swift in Sources */,
 				9F6A372F20B6A8F800E11018 /* AppDelegate.swift in Sources */,
 				91D139E620B80C030041F3DC /* QRReaderViewController.swift in Sources */,
+				C0B67D9720BE8EFB00BBED41 /* SecondArViewController.swift in Sources */,
 				9F34B27E20B72F6E00F23B8F /* QuizViewController.swift in Sources */,
+				C0B67D9620BE8EFB00BBED41 /* FourthArViewController.swift in Sources */,
 				9F471E9420B7F7D8003BE5BB /* GebruikerViewController.swift in Sources */,
 				9F7A743E20B6F0FD00FF5693 /* MaakTeamViewController.swift in Sources */,
 			);
