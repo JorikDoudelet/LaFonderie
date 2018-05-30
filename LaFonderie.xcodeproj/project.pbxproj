@@ -13,6 +13,7 @@
 		9F0C094620BD4EBF002715FB /* avatarTeslaRoodWit.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C094120BD4EBE002715FB /* avatarTeslaRoodWit.png */; };
 		9F0C094720BD4EBF002715FB /* BellGoeieGrote.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C094220BD4EBE002715FB /* BellGoeieGrote.png */; };
 		9F0C094820BD4EBF002715FB /* marieCurie3WitRood.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F0C094320BD4EBF002715FB /* marieCurie3WitRood.png */; };
+		9F1D3CFF20BECCAC002A0B97 /* tempStory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9F1D3CFE20BECCAC002A0B97 /* tempStory.storyboard */; };
 		9F34B26820B6F36200F23B8F /* Lato-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F34B26720B6F36100F23B8F /* Lato-Regular.ttf */; };
 		9F34B26A20B6F5A300F23B8F /* Logo2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F34B26920B6F5A300F23B8F /* Logo2.png */; };
 		9F34B26C20B702EB00F23B8F /* KiesCategorieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F34B26B20B702EB00F23B8F /* KiesCategorieViewController.swift */; };
@@ -55,6 +56,7 @@
 		9F0C094120BD4EBE002715FB /* avatarTeslaRoodWit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = avatarTeslaRoodWit.png; sourceTree = "<group>"; };
 		9F0C094220BD4EBE002715FB /* BellGoeieGrote.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BellGoeieGrote.png; sourceTree = "<group>"; };
 		9F0C094320BD4EBF002715FB /* marieCurie3WitRood.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marieCurie3WitRood.png; sourceTree = "<group>"; };
+		9F1D3CFE20BECCAC002A0B97 /* tempStory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = tempStory.storyboard; sourceTree = "<group>"; };
 		9F34B26720B6F36100F23B8F /* Lato-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lato-Regular.ttf"; sourceTree = "<group>"; };
 		9F34B26920B6F5A300F23B8F /* Logo2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Logo2.png; sourceTree = "<group>"; };
 		9F34B26B20B702EB00F23B8F /* KiesCategorieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KiesCategorieViewController.swift; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 				9F471E9320B7F7D8003BE5BB /* GebruikerViewController.swift */,
 				91D139E520B80C030041F3DC /* QRReaderViewController.swift */,
 				9F7B165220BC2BA6000C8AFA /* WinnaarViewController.swift */,
+				9F1D3CFE20BECCAC002A0B97 /* tempStory.storyboard */,
 			);
 			path = LaFonderie;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9F34B27920B718FD00F23B8F /* logoBroodGroen.png in Resources */,
+				9F1D3CFF20BECCAC002A0B97 /* tempStory.storyboard in Resources */,
 				9F7A743320B6EA3300FF5693 /* Montserrat-Regular.ttf in Resources */,
 				9F6A373C20B6A8FA00E11018 /* LaunchScreen.storyboard in Resources */,
 				9F7A743620B6EC2F00FF5693 /* logo.png in Resources */,
