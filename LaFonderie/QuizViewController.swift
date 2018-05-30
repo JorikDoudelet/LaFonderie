@@ -15,11 +15,21 @@ class TestViewController: UIViewController {
     
     @IBOutlet var antwoordButtons: [UIButton]!
     
-    var myScore = 0
+    //var totaalScore = 0
+    var waardePunten = 1
+    var metaalScore = 0
+    var voedingScore = 0
+    var textielScore = 0
+    var houtScore = 0
+    var themaCounter = 0
+    
     var currentQuestion = 0
     var rightAnswerPlace:UInt32 = 0
     var rightAnswer:String = ""
+    var categorieNaam:String = "Metaal"
     @IBOutlet weak var lblVraag: UILabel!
+    
+    
     var ref: DatabaseReference!
     //var antwoordenArray = [String]()
     var antwoordenArray = [[String]]()
@@ -32,9 +42,9 @@ class TestViewController: UIViewController {
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        
+        print("AANTAL THEMAS", themaCounter)
         self.ref = Database.database().reference()
-        let quizVraagRef = self.ref.child("Thema/Metaal")
+        let quizVraagRef = self.ref.child("Thema/\(categorieNaam)")
         quizVraagRef.observe(.value) { (snapShot) in
             if let snapshots = snapShot.children.allObjects as? [DataSnapshot] {
                     for child in snapshots {
@@ -43,7 +53,7 @@ class TestViewController: UIViewController {
                         var antwoordString:String = ""
                         let vraag = child.childSnapshot(forPath: "vraag").value as! String
                         self.rightAnswer = child.childSnapshot(forPath: "juistAntwoord").value as! String
-                        print("Juist Antwoord: ", self.rightAnswer)
+                        self.waardePunten = child.childSnapshot(forPath: "punten").value as! Int
                         let antwoorden = child.childSnapshot(forPath: "Antwoorden")
                         
                         //self.lblVraag.text = vraag
@@ -57,8 +67,6 @@ class TestViewController: UIViewController {
                         self.antwoordenArray.append(temparray)
                         //self.vragenArray.append(vraag)
                         
-                        //print("Vragen: ", self.vragenArray)
-                        print("Antwoorden: ", self.antwoordenArray)
                     }
                 }
             self.setAntwoorden()
@@ -80,20 +88,41 @@ class TestViewController: UIViewController {
         if (sender.tag == Int(rightAnswerPlace))
         {
             print("Right!")
-            self.myScore += 1
+           // self.totaalScore += 1
+            UserDefaults.standard.set(UserDefaults.standard.integer(forKey: "GebruikerScore")+1, forKey: "GebruikerScore")
+            switch categorieNaam {
+            case "Metaal":
+                metaalScore += 1
+            case "Textiel":
+                textielScore += 1
+            case "Voeding":
+                voedingScore += 1
+            case "Hout":
+                houtScore += 1
+            default:
+                print("failed")
+            }
             sender.setTitle("CORRECT", for: .normal)
         }
         else
         {
             print("WRONG!!!!")
+            sender.setTitle("JAMMER, FOUT", for: .normal)
         }
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
             if(self.currentQuestion != self.vragenArray.count){
                 self.setAntwoorden()
             }
         })
+        
         if(self.currentQuestion >= self.vragenArray.count){
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.5, execute: {
+                self.performSegue(withIdentifier: "naarCategorie", sender: self)
+            })
+        }
+        if(themaCounter == 4 && self.currentQuestion >= self.vragenArray.count){
             performSegue(withIdentifier: "naarWinnaar", sender: self)
+            UserDefaults.standard.set(0, forKey: "aantalThemasGespeeld")
         }
     }
     func setAntwoorden(){
@@ -132,7 +161,7 @@ class TestViewController: UIViewController {
         if segue.identifier == "naarWinnaar"
         {
             if let destinationVC = segue.destination as? WinnaarViewController {
-                destinationVC.myScore = self.myScore
+                destinationVC.myScore = UserDefaults.standard.integer(forKey: "GebruikerScore")
             }
         }
      }

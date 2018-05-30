@@ -10,11 +10,12 @@ import UIKit
 import FirebaseDatabase
 import CoreData
 class GebruikerViewController: UIViewController {
-    
+    let userDefault = UserDefaults.standard
+    //let gebruikersScore = UserDefaults.standard
+    //let avatarNaam = UserDefaults.standard
     var ref: DatabaseReference!
     var isSolo:Bool = false
-    var avatarNaam:String = ""
-    var managedContext:NSManagedObjectContext?
+    var selectedAvatar:String = ""
     @IBOutlet weak var txtGebruikernaam: UITextField!
     @IBOutlet var avatarButtons: [UIButton]!
     
@@ -24,29 +25,14 @@ class GebruikerViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewDidAppear(_ animated: Bool) {
-        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else {return}
-        self.managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Gebruiker")
-        
-        // Configure Fetch Request
-        fetchRequest.includesPropertyValues = false
-        
-        do {
-            let items = try managedContext?.fetch(fetchRequest) as! [NSManagedObject]
-            
-            for item in items {
-                managedContext?.delete(item)
-            }
-            
-            // Save Changes
-            try managedContext?.save()
-            
-        } catch {
-            // Error Handling
-            // ...
+        for button in avatarButtons{
+            button.backgroundColor = .clear
+            button.layer.cornerRadius = 5
+            button.layer.borderWidth = 2
+            button.layer.borderColor =  UIColor.white.cgColor
+            button.imageView?.contentMode = UIViewContentMode.scaleAspectFit
         }
         
-        print(isSolo)
         self.ref = Database.database().reference()
     }
     override func didReceiveMemoryWarning() {
@@ -58,9 +44,9 @@ class GebruikerViewController: UIViewController {
     {
         let tappedButton = sender as! UIButton
         
-        tappedButton.backgroundColor = UIColor.gray
+        tappedButton.backgroundColor = UIColor.white
         tappedButton.isSelected = true
-        //avatarNaam = tappedButton.currentImage
+        selectedAvatar = tappedButton.currentTitle!
         for button in avatarButtons{
             if(button != tappedButton){
                 button.backgroundColor = UIColor.clear
@@ -87,17 +73,9 @@ class GebruikerViewController: UIViewController {
             self.ref.child("Persoon").childByAutoId().setValue(persoon)*/
             if let destinationVC = segue.destination as? KiesCategorieViewController {
                 if(isSolo){
-                    let gebruiker = NSEntityDescription.insertNewObject(forEntityName: "Gebruiker", into: self.managedContext!) as! Gebruiker
-                    
-                    gebruiker.gebruikersnaam = txtGebruikernaam.text
-                    
-                    do{
-                        try self.managedContext!.save()
-                    }
-                    catch{
-                        fatalError("Failure to save context: \(error)")
-                        
-                    }
+                    userDefault.set(txtGebruikernaam.text, forKey: "Gebruikersnaam")
+                    userDefault.set(self.selectedAvatar, forKey: "AvatarNaam")
+                    userDefault.set(0, forKey: "GebruikerScore")
                 }
             }
         }
