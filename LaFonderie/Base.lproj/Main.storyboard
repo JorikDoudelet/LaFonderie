@@ -211,7 +211,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGS-1Z-MDB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3914" y="990"/>
+            <point key="canvasLocation" x="3912.8000000000002" y="989.95502248875573"/>
         </scene>
         <!--Mijn Webview Controller-->
         <scene sceneID="5jG-8k-Fc1">
@@ -237,7 +237,12 @@
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpp-BO-FMQ">
                                         <rect key="frame" x="8" y="9" width="359" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="Press when you're ready to do the Quiz"/>
+                                        <state key="normal" title="Take the quiz">
+                                            <color key="titleColor" red="0.73725490196078436" green="0.27058823529411763" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="i4J-S6-12k" kind="showDetail" identifier="NaarDeQuizVragen" id="aoE-lH-1PC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -809,7 +814,7 @@ CATEGORIE JE WIL STARTEN</string>
                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="17"/>
                                 <color key="tintColor" red="0.59607843140000005" green="0.21960784310000001" blue="0.25098039220000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Speel Opnieuw">
-                                    <color key="titleColor" red="0.74509803919999995" green="0.2666666667" blue="0.30196078430000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleColor" red="0.73725490196078436" green="0.27058823529411763" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="et2-Hn-dAJ" kind="show" id="oQ3-y5-b7D"/>
@@ -888,102 +893,6 @@ CATEGORIE JE WIL STARTEN</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yn8-ci-cmI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="52" y="134"/>
-        </scene>
-        <!--First Ar View Controller-->
-        <scene sceneID="LJv-ED-LOc">
-            <objects>
-                <viewController id="VsN-tg-vOS" customClass="FirstArViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="hqX-45-RYw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zvg-9a-ea1">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="ckI-so-XSl"/>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="Zvg-9a-ea1" id="6O6-dJ-xG7"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jdW-PN-kJZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2229.5999999999999" y="1965.9670164917543"/>
-        </scene>
-        <!--Second Ar View Controller-->
-        <scene sceneID="fYM-iC-39d">
-            <objects>
-                <viewController id="eL7-Vd-yl8" customClass="SecondArViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="4at-o0-dyl">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wlj-Wt-qxB">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="mCJ-Wy-7QJ"/>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="Wlj-Wt-qxB" id="4RM-8Q-b7x"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pvQ-8u-wpg" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3013.5999999999999" y="1965.9670164917543"/>
-        </scene>
-        <!--Third Ar View Controller-->
-        <scene sceneID="PTw-gI-gQC">
-            <objects>
-                <viewController id="2qx-7P-ctK" customClass="ThirdArViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="C94-C9-fLW">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4d0-GL-J0D">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="dea-ID-UxH"/>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="4d0-GL-J0D" id="2vA-d7-xuz"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7ff-LR-Ivh" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3784.8000000000002" y="1964.1679160419792"/>
-        </scene>
-        <!--Fourth Ar View Controller-->
-        <scene sceneID="ZLe-uT-JZ5">
-            <objects>
-                <viewController id="Fvj-lI-Stc" customClass="FourthArViewController" customModule="LaFonderie" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XL4-hw-rrw">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="voK-J8-5tG">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </arscnView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="GyK-9u-GLD"/>
-                    </view>
-                    <connections>
-                        <outlet property="sceneView" destination="voK-J8-5tG" id="gq7-dk-uvh"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="myz-wB-48a" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="4476" y="1957.8710644677662"/>
         </scene>
     </scenes>
     <resources>

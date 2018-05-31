@@ -120,7 +120,7 @@ class TestViewController: UIViewController {
                 self.performSegue(withIdentifier: "naarCategorie", sender: self)
             })
         }
-        if(themaCounter == 4 && self.currentQuestion >= self.vragenArray.count){
+        if(themaCounter >= 4 && self.currentQuestion >= self.vragenArray.count){
             performSegue(withIdentifier: "naarWinnaar", sender: self)
             UserDefaults.standard.set(0, forKey: "aantalThemasGespeeld")
         }

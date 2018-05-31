@@ -99,12 +99,12 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     func found(code: String) {
         print(code)
        print(mijncategorie)
-        if(mijncategorie == "Metaal" && code == "https://schooltv.nl/video/de-ijzeren-eeuw-de-industriele-revolutie-in-nederland/" || mijncategorie == "Hout" && code == "http://www.hout.com"  || mijncategorie == "Textiel" && code == "https://www.youtube.com/watch?v=w4gFwMh_l6k" || mijncategorie == "Voeding" && code == "https://www.visvim.tv/dissertations/product_introspection_coffee_roasting.html"){
+        if(mijncategorie == "Metaal" && code == "https://schooltv.nl/video/de-ijzeren-eeuw-de-industriele-revolutie-in-nederland/" || mijncategorie == "Hout" && code == "https://www.youtube.com/watch?v=r3FfU0CtdJA"  || mijncategorie == "Textiel" && code == "https://www.youtube.com/watch?v=w4gFwMh_l6k" || mijncategorie == "Voeding" && code == "https://www.youtube.com/watch?v=lR1QGyhs7Vo"){
           stringUrlLink = code
             performSegue(withIdentifier: "openQrScannerLink", sender: nil)
         }
     }
-    
+    // "https://www.visvim.tv/dissertations/product_introspection_coffee_roasting"
     override var prefersStatusBarHidden: Bool {
         return true
     }
@@ -120,6 +120,8 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
             let mijndestination = segue.destination as! mijnWebviewController
             
             mijndestination.url = URL(string: stringUrlLink)
+            
+              mijndestination.mijncategorie = mijncategorie
         }
         
         

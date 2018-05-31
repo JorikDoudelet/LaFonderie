@@ -14,7 +14,8 @@ class mijnWebviewController: UIViewController {
     @IBOutlet weak var mijnwebview: WKWebView!
     
     var url = URL(string: "")
-    
+    var mijncategorie = String()
+    var themaArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,8 +30,24 @@ class mijnWebviewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+     // Get the new view controller using segue.destinationViewController.
+     // Pass the selected object to the new view controller.
+     
+     if segue.identifier == "NaarDeQuizVragen"
+     {
+     if let destinationVC = segue.destination as? TestViewController {
+     destinationVC.categorieNaam = mijncategorie
+     themaArray.append(mijncategorie)
+     // var aantalThemasGespeeld:Int?
+     // aantalThemas.set(aantalThemasGespeeld!, forKey: "AantalThemas")
+     print("THEMA ARRAY", themaArray)
+     destinationVC.themaCounter = UserDefaults.standard.integer(forKey: "aantalThemasGespeeld")
+     }
+     
+     }
+     
+     }
     /*
     // MARK: - Navigation
 
