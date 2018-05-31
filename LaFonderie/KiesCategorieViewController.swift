@@ -85,7 +85,7 @@ class KiesCategorieViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         
@@ -99,8 +99,20 @@ class KiesCategorieViewController: UIViewController {
                print("THEMA ARRAY", themaArray)
                 destinationVC.themaCounter = UserDefaults.standard.integer(forKey: "aantalThemasGespeeld")
             }
+          
         }
+      
+    }*/
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        
+        if segue.identifier == "naarQrScanner" {
+            
+            let mijndestination = segue.destination as! QRReaderViewController
+            
+            mijndestination.mijncategorie = categorieNaam
+        }
+        
+        
     }
-
 }
 

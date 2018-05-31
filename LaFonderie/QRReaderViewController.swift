@@ -12,12 +12,13 @@ import Foundation
 class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDelegate{
 
     @IBOutlet var mijnpreview: UIView!
-
+    var mijncategorie = String()
     var stringUrlLink = String()
     var captureSession: AVCaptureSession!
     var previewLayer: AVCaptureVideoPreviewLayer!
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
 
         captureSession = AVCaptureSession()
@@ -97,8 +98,11 @@ class QRReaderViewController: UIViewController, AVCaptureMetadataOutputObjectsDe
     
     func found(code: String) {
         print(code)
-        stringUrlLink = code
-        performSegue(withIdentifier: "openQrScannerLink", sender: nil)
+       print(mijncategorie)
+        if(mijncategorie == "Metaal" && code == "https://schooltv.nl/video/de-ijzeren-eeuw-de-industriele-revolutie-in-nederland/" || mijncategorie == "Hout" && code == "http://www.hout.com"  || mijncategorie == "Textiel" && code == "https://www.youtube.com/watch?v=w4gFwMh_l6k" || mijncategorie == "Voeding" && code == "https://www.visvim.tv/dissertations/product_introspection_coffee_roasting.html"){
+          stringUrlLink = code
+            performSegue(withIdentifier: "openQrScannerLink", sender: nil)
+        }
     }
     
     override var prefersStatusBarHidden: Bool {
